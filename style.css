@@ -1,0 +1,984 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin :0;
+    background-color: #0a0a11;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 15px;
+}
+
+
+/* bagian navbar */
+.nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    transition: top 0.9s ease;
+}
+.nav.hidden {
+    top: -100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 4vw; 
+    margin: 0 6vw;
+    border-radius: 50px;
+}
+.Nama-web {
+    font-size: 10px;
+    font-family: 'Pacifico', cursive;
+}
+.list-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+    gap: 60px;
+}
+.list-nav h1.list{
+    width: max-content;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.list-nav h1.list::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+.list-nav h1.list:hover::after{
+    width: 100%;
+    background-color: #e67e22;
+}
+.list-nav h1:hover{
+    color: #e67e22;
+}
+.button-box {
+    display: flex;
+	width: 100px;
+	margin: 30px auto;
+	position: relative;
+	border-radius: 50px;
+	background: #fff
+}
+.tooltip {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #0a0a11;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.button-box:hover .tooltip{
+    top: 130%;
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+}
+.button-box img{
+    width: 100%;
+    height: 90%;
+}
+.toggle-btn {
+	padding: 8px 15px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	text-align: center;
+    border-radius: 50%;
+}
+#btn {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 55px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 50px;
+	transition: .5s;
+}
+
+
+/* bagian halaman pembuka */
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    background-position: center bottom;
+    transition: 0.1s;
+}
+.banner .bg-1{
+    background-image: url('asset/0.png');
+}
+.banner .bg-2{
+    background-image: url('asset/1.png');
+}
+.banner .bg-3{
+    background-image: url('asset/2.png');
+}
+.banner .bg-4{
+    background-image: url('asset/3.png');
+}
+.banner .bg-5{
+    background-image: url('asset/4.png');
+}
+.banner .bg-6{
+    background-image: url('asset/5.png');
+}
+
+.banner  h1{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 2rem;
+    }
+}
+
+
+/* style bagian aboutus */
+.aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.aboutus button{
+    width: 23%;
+    height: 8vh;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.aboutus button:hover{
+    background-color: #fff;
+    color: #e67e22;
+    transform: scale(1.05);
+}
+
+.primer{
+    color: #e67e22;
+}
+
+/* style bagian title about us*/
+.title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+    gap: 2vw;
+}
+.title h1{
+    font-size: 36px;
+    margin-top: 0;
+}
+.title label{
+    font-size: 24px;
+}
+/* style bagian title about us*/
+
+/* style bagian animation about us*/
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(3){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(5){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(6){
+    transition-delay: 0.9s;
+}
+.animation-show:nth-child(7){
+    transition-delay: 0.9s;
+}
+/* style bagian animation about us*/
+
+
+/* style bagian banner2 */
+.banner2 {
+    flex: 1.3   ;
+    height: 120vh;
+    width: 95vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner2 .bg2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: transform 0.1s;
+}
+.banner2 .bg2.bg-1 {
+    background-image: url('asset/6.png'); /* Ganti dengan gambar yang sesuai */
+}
+.banner2 .bg2.bg-2 {
+    background-image: url('asset/7.png'); /* Ganti dengan gambar yang sesuai */
+}
+.banner2 .bg2.bg-3 {
+    background-image: url('asset/8.png'); /* Ganti dengan gambar yang sesuai */
+}
+.banner2 .bg2.bg-4 {
+    background-image: url('asset/9.png'); /* Ganti dengan gambar yang sesuai */
+}
+.banner2 .bg2.bg-5 {
+    background-image: url('asset/11.png'); /* Ganti dengan gambar yang sesuai */
+    background-size: 50%;
+    bottom: 300px;
+    left: -100px;
+}
+.banner2 .bg2.bg-6 {
+    background-image: url('asset/12.png'); /* Ganti dengan gambar yang sesuai */
+    background-size: 50%;
+    left: -150px;
+    bottom: 50px;
+}
+.banner2 .bg2.bg-7 {
+    background-image: url('asset/13.png'); /* Ganti dengan gambar yang sesuai */
+    background-size: 80%;
+    bottom: 70px;
+}
+.banner2 .bg2.bg-8 {
+    background-image: url('asset/10.png'); /* Ganti dengan gambar yang sesuai */
+}
+
+
+.part3{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 200px 0;
+}
+.menyediakan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.7s, opacity 0.7s;
+}
+
+.menyediakan.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.main-card {
+    display: flex;
+    color: white;
+    gap: 80px;
+    padding: 0 150px;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden; /* Menyembunyikan bagian yang keluar dari card */
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.active .card{
+    transform: translateY(0);
+    opacity: 1;
+}
+.card:nth-child(2){
+    transition-delay: 0.3s;
+}
+.card:nth-child(3){
+    transition-delay: 0.5s;
+}
+.card:nth-child(4){
+    transition-delay: 0.7s;
+}
+
+.card .isi-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.card:hover .isi-card {
+    transform: translateY(0);
+    opacity: 1; 
+}
+
+.card .isi-card h1 {
+    margin: 0;
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(20px); 
+}
+
+.card:hover .isi-card h1 {
+    transform: translateY(0); 
+}
+
+.card .isi-card label {
+    display: block;
+    margin-top: 10px;
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card:hover .isi-card label {
+    opacity: 1; 
+}
+
+
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0); /* Latar belakang hitam semi-transparan */
+    color: white; /* Warna teks putih */
+    display: flex;
+    flex-direction: column; /* Agar teks dan loader terletak secara vertikal */
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Ukuran font */
+    z-index: 999; /* Pastikan splash screen di atas elemen lain */
+    font-family: 'Pacifico', cursive;
+
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Border putih semi-transparan */
+    border-top: 8px solid #ffffff; /* Bagian atas berwarna putih penuh */
+    border-radius: 50%; /* Membuat lingkaran */
+    width: 60px; /* Diameter lingkaran */
+    height: 60px; /* Diameter lingkaran */
+    animation: spin 1s linear infinite; /* Animasi berputar */
+    margin-bottom: 20px; /* Jarak antara loader dan teks */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+.comment-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+    padding-top: 150px;
+}
+
+.all-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-comment {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 200px;
+    z-index: 10;
+}
+
+.button-comment .btn2 {
+    width: 80px;
+    height: 80px;
+    background-image: url('asset/next.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+.button-comment .btn1 {
+    width: 80px;
+    height: 80px;
+    background-image: url('asset/pevious.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+.comment {
+    display: none; /* Semua komentar disembunyikan awalnya */
+    flex-direction: column;
+    position: relative;
+    width: 380px;
+    height: 220px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.comment h1{
+    padding-bottom: 10px;
+}
+
+.comment.active {
+    display: block; 
+}
+
+.comment h1 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.comment label {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.Bondalem-Eco-Dive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+
+.banner-penjelasan{
+    height: 550vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-penjelasan h1{
+    color: #e67e22;
+}
+.banner-penjelasan .bgpnj{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.banner-pnj .bg-1{
+    background-image: url('asset/23.png');
+}
+
+@keyframes animasi-bg2 {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    50%{
+        transform: rotate(5deg) translateX(-10px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
+}
+.banner-pnj .bg-2{
+    background-image: url('asset/25.png');
+    animation: animasi-bg2 8s linear infinite;
+}
+
+@keyframes animasi-bg3 {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+    32%{
+        transform: translate(-500px, 200px)  rotate(-20deg) ;
+    }
+    60%{
+        transform: translate(-1000px, 200px) rotate(0deg) ;
+    }
+    100%{
+        transform: translate(-2000px, -100px) rotate(30deg) ;
+    }
+    
+}
+.banner-pnj .bg-3{
+    background-image: url('asset/27.png');
+    animation: animasi-bg3 9s linear infinite;
+    animation-fill-mode: forwards; 
+    position: absolute;
+    left: 600px;
+}
+
+@keyframes animasi-bg4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-4deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.banner-pnj .bg-4{
+    background-image: url('asset/28.png');
+    animation: animasi-bg4 8s linear infinite;
+}
+
+@keyframes animasi-bg5 {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    50%{
+        transform: rotate(5deg) translateX(-20px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
+}
+.banner-pnj .bg-5{
+    background-image: url('asset/29.png');
+    animation: animasi-bg5 8s linear infinite;
+}
+
+@keyframes animasi-bg6 {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+    100%{
+        transform: rotate(5deg) translate(-1500px, -1700px);
+    }
+    
+}
+.banner-pnj .bg-6 {
+    background-image: url('asset/31.png');
+    animation: animasi-bg6 8s linear infinite;
+    animation-fill-mode: forwards; 
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+
+
+@keyframes animasi-bg7 {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+    100%{
+        transform: rotate(-50deg) translate(1800px, 2100px);
+    }
+    
+}
+.banner-pnj .bg-7{
+    background-image: url('asset/32.png');
+    top: -400px;
+    left: -500px;
+    animation: animasi-bg7 8s linear infinite;
+    animation-fill-mode: forwards; 
+    position: absolute;
+}
+
+@keyframes animasi-bg8 {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    50%{
+        transform: rotate(5deg) translateX(-20px);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
+}
+.banner-pnj .bg-8 {
+    background-image: url('asset/33.png');
+    animation: animasi-bg8 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes animasi-bg9 {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: translateY(-50px) rotate(-4deg);
+    }
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+.banner-pnj .bg-9{
+    background-image: url('asset/35.png');
+    animation: animasi-bg9 10s linear infinite;
+}
+
+.banner-pnj .bg-10{
+    background-image: url('asset/34.png');
+}
+
+
+.line{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 60%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.horizontal-line {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    left: 40%;
+}
+
+.horizontal-line-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 10%;
+    left: 50%;
+}
+
+.penjelasan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 14%;
+    color: #0a0a11;
+    gap: 20px;
+    width: 24vw;
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 8px;
+}
+
+.penjelasan ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 18px;
+}
+
+.penjelasan-2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 63%;
+    color: #0a0a11;
+    gap: 20px;
+    width: 27vw;
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 8px;
+}
+
+.penjelasan-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 17px;
+
+}
+
+.penjelasan-3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 12%;
+    color: #0a0a11;
+    gap: 20px;
+    width: 26vw;
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 8px;
+}
+
+.penjelasan-3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 18px;
+}
+
+.horizontal {
+    flex-grow: 1;
+    height: 2px; 
+    background-color: #fff;
+}
+
+/* Bulatan */
+.circle {
+    width: 10px; 
+    height: 10px;
+    background-color: #fff; 
+    border-radius: 50%; 
+}
+
+
+.chooses{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+    margin: 100px 0;
+    color: #fff;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+    margin: 100px 0;
+}
+.choose a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.peta {
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
+}
+.active .peta{
+    transform: translateY(0);
+    opacity: 1;
+}
+.peta .petaD {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.peta .petaD.bg-1 {
+    background-image: url('peta/1.png'); 
+    transition-delay: 1s;
+}
+.loc{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.loc:hover{
+    color: #e67e22;
+    transform: scale(1.5);
+}
+
+#loc1{
+    left: 970px;
+    top: 110px;
+}
+#loc2{
+    left: 1200px;
+    top: 260px;
+}
+#loc3{
+    left: 860px;
+    top: 600px;
+}
+#loc4{
+    left: 820px;
+    top: 745px;
+}
+#loc5{
+    left: 1160px;
+    top: 670px;
+}
+
+
+#loc6{
+    left: 670px;
+    top: 140px;
+}
+#loc7{
+    left: 970px;
+    top: 110px;
+}
+#loc8{
+    left: 1200px;
+    top: 260px;
+}
+#loc9{
+    left: 1100px;
+    top: 480px;
+}
+#loc10{
+    left: 860px;
+    top: 600px;
+}
+#loc11{
+    left: 1100px;
+    top: 630px;
+}
+
+
+
+
+/* bagian destinasi */
+.destinasi-diving{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.gambar-utama{
+    display: flex;
+    justify-content: space-between;
+}
+.keterangan{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px 100px 100px 150px;
+}
+.keterangan h1{
+    color: #e67e22;
+}
+.keterangan button{
+    width: 30%;
+    height: 50px;
+    border-radius: 8px;
+    color: #e67e22;
+    background-color: #fff;
+    border: none;
+    margin: 20px 0;
+}
+.gambar img{
+    width: auto;
+    height: 550px;
+    border-radius: 8px;
+}
+
+
+/* style piliihan */
+.semua-pilihan{
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    padding: 50px 0 50px 150px;
+}
+.pilihan img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}

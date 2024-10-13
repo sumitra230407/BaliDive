@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaliDive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33fe24c48c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <div class="nav">
+            <div class="navbar">
+                <div class="Nama-web">
+                    <h1>BaliDev</h1>
+                </div>
+                <div class="list-nav">
+                    <h1 class="list" data-lang="id">Halaman Utama</h1>
+                    <h1 class="list" data-lang="en" style="display: none;">
+                        Home
+                    </h1>
+                    <h1 class="list" data-lang="id">
+                        Tentang Kami
+                    </h1>
+                    <h1 class="list" data-lang="en" style="display: none;">
+                        About Us
+                    </h1>
+                    <h1 class="list" data-lang="id">
+                        Wisata
+                    </h1>
+                    <h1 class="list" data-lang="en" style="display: none;">
+                        Destination
+                    </h1>
+                </div>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="leftClick()">
+                            <img src="asset/IndoensiaFlag.png" alt="">
+                        </button>
+                        <button type="button" class="toggle-btn" onclick="rightClick()">
+                            <img src="asset/EnglishFalg.png" alt="">
+                        </button>
+                        <div class="tooltip">Switch Leangue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Penutup Navbar -->
+
+        <!-- Halaman Utama -->
+        <div class="banner">
+            <div class="bg bg-1"></div>
+            <div class="bg bg-2"></div>
+            <h1>
+                BaliDive</h1>
+            <div class="bg bg-3"></div>
+            <div class="bg bg-4"></div>
+            <div class="bg bg-5"></div>
+            <div class="bg bg-6"></div>
+        </div>
+        <!-- Penutup Halaman Utama -->
+        
+        <!-- About Us -->
+        <div class="aboutus">
+            <div class="title">
+                <h1 class="animation-show"  data-lang="id">
+                    Tentang <span class="primer">Kami</span>
+                </h1>
+                <h1 class="animation-show"  data-lang="en" style="display: none;">
+                    About <span class="primer">Us</span>
+                </h1>
+                <label for="" class="animation-show" data-lang="id">
+                    Selamat datang di Dewata Eco Dive, destinasi utama untuk pengalaman menyelam yang ramah lingkungan di Bali. Kami adalah tim profesional yang berdedikasi untuk memberikan petualangan bawah laut yang tak terlupakan, sambil tetap berkomitmen terhadap praktik keberlanjutan.             
+                </label>
+                <label for="" class="animation-show" data-lang="en" style="display: none;">
+                    Welcome to Dewata Eco Dive, the premier destination for eco-friendly diving experiences in Bali. We are a team of professionals dedicated to delivering unforgettable underwater adventures, while remaining committed to sustainable practices.
+                </label>
+                <button class="animation-show"><b>Contact Us</b></button>
+            </div>
+            <div class="banner2">
+                <div class="bg2 bg-1"></div>
+                <div class="bg2 bg-2"></div>
+                <div class="bg2 bg-3"></div>
+                <div class="bg2 bg-4"></div>
+                <div class="bg2 bg-5"></div>
+                <div class="bg2 bg-6"></div>
+                <div class="bg2 bg-7"></div>
+                <div class="bg2 bg-8"></div>
+            </div>
+        </div>
+        <!-- Penutup About Us -->
+
+
+
+        <div class="part3">
+            <div class="menyediakan" style="color: white;">
+                <h1 data-lang="id">Kami menyediakan</h1>
+                <h1 data-lang="en" style="display: none;">We provide</h1>
+                <label data-lang="id">Hal-hal mengenai penjelajahan bawah laut, mulai dari menyelam hingga membantu merawat ekosistem laut</label>
+                <label data-lang="en" style="display: none;">Information about underwater exploration, from diving to helping preserve marine ecosystems</label>
+            </div>
+            <div class="main-card" style="color: white;">
+                <div class="card" style="background-image: url('asset/diving.jpg');">
+                    <div class="isi-card">
+                        <h1>Diving</h1>
+                        <label for="" class="animation-show" data-lang="id">Diving adalah kegiatan menyelam dengan peralatan seperti tabung oksigen untuk menjelajahi bawah laut. Aktivitas ini memungkinkan kita untuk melihat kehidupan laut lebih dalam.</label>
+                        <label for="" class="animation-show" data-lang="en" style="display: none;">Diving is an underwater activity using equipment like oxygen tanks to explore the sea. It allows us to see marine life more deeply.</label>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('asset/snorkeling.jpg');">
+                    <div class="isi-card">
+                        <h1>Snorkeling</h1>
+                        <label for="" class="animation-show" data-lang="id">Snorkeling adalah kegiatan melihat keindahan bawah laut dari permukaan dengan menggunakan masker dan snorkel. Biasanya dilakukan di perairan dangkal.</label>
+                        <label for="" class="animation-show" data-lang="en" style="display: none;">Snorkeling is an activity of viewing underwater beauty from the surface using a mask and snorkel. It is usually done in shallow waters.</label>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('asset/coral.jpg');">
+                    <div class="isi-card">
+                        <h1>Coral Conservation</h1>
+                        <label for="" class="animation-show" data-lang="id">Coral Conservation kegiatan memelihara terumbu karang sembari menyaksikan keindahan bawah laut</label>
+                        <label for="" class="animation-show" data-lang="en" style="display: none;">Coral Conservation is an activity of preserving coral reefs while enjoying the beauty of the underwater world.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="banner-penjelasan">
+                <div class="banner-pnj">
+                    <div class="bgpnj bg-1"></div>
+                    <div class="bgpnj bg-2"></div>
+                    <div class="bgpnj bg-3"></div>
+                    <div class="bgpnj bg-4"></div>
+                    <div class="bgpnj bg-5"></div>
+                    <div class="bgpnj bg-6"></div>
+                    <div class="bgpnj bg-7"></div>
+                    <div class="bgpnj bg-8"></div>
+                    <div class="bgpnj bg-9"></div>
+                    <div class="bgpnj bg-10"></div>
+                </div>
+                <div class="line"></div>
+                <div class="horizontal-line" style="top: 25%;">
+                    <div class="circle left"></div>
+                    <div class="horizontal"></div>
+                </div>
+                <div class="horizontal-line-2" style="top: 48%;">
+                    <div class="horizontal"></div>
+                    <div class="circle right"></div>
+                </div>
+                <div class="horizontal-line" style="top: 70%;">
+                    <div class="circle left"></div>
+                    <div class="horizontal"></div>
+                </div>
+
+                <div class="penjelasan" style="top: 22.4%;">
+                    <h1>Snorkeling</h1>
+                    <ul>
+                        <li>Berenang dibawah air dengan kedalaman 2-5 meter</li>
+                        <li>Minimal usia 10 tahun</li>
+                        <li>Coba snorkeling tanpa harus memiliki pengalaman</li>
+                    </ul>
+                </div>
+                <div class="penjelasan-2" style="top: 45%;">
+                    <h1>Diving</h1>
+                    <ul>
+                        <li>Berenang dibawah air dengan kedalaman 200-2000 meter</li>
+                        <li>Minimal bersertifikat diving</li>
+                        <li>Ditemani instruktur bersertifikat</li>
+                    </ul>
+                </div>
+                <div class="penjelasan-3" style="top:67%;">
+                    <h1>Coral Conservation</h1>
+                    <ul>
+                        <li>Berenang dibawah air dengan kedalaman hampir sama dengan diving</li>
+                        <li>Minimal bersertifikat diving</li>
+                        <li>Ditemani instruktur bersertifikat</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="peta-iteractive">
+                <div class="chooses">
+                    <h1>Pilih pilihan mu untuk mulai berjelajah dikedalaman laut</h1>
+                </div>
+                <div class="choose">
+                    <a href="" id="diving"><h1>Diving</h1></a>
+                    <a href="" id="coral"><h1>Coral Conservation</h1></a>
+                    <a href="" id="snorkeling"><h1>Snorkeling</h1></a>
+                </div>
+                <div class="peta" id="peta-diving">
+                    <div class="petaD bg-1"></div>
+                    <div class="loc" id="loc1">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc2">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc3">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc5">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <div class="peta" style="display: none;">
+                    <div class="petaD bg-1"></div>
+                    <div class="loc" id="loc6">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc7">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc8">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc9">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc10">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="loc" id="loc11">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destinasi">
+                <div class="destinasi-diving">
+                    <div class="gambar-utama">
+                        <div class="keterangan">
+                            <h1>Bali Fun Diving</h1>
+                            <label for="">Bali Fun Diving menawarkan keindahan bawah laut dan berenang bersama manta</label>
+                            <button>Jelajah Destinasi</button>
+                        </div>
+                        <div class="gambar">
+                            <img src="destinasi/2023-12-17.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="semua-pilihan">
+                        <div class="pilihan pilih1">
+                            <img src="destinasi/2023-12-17.jpg" alt="">
+                        </div>
+                        <div class="pilihan pilih2">
+                            <img src="destinasi/2024-06-23.jpg" alt="">
+                        </div>
+                        <div class="pilihan pilih3">
+                            <img src="destinasi/WhatsApp Image 2021-11-11 at 16.22.33 (1).jpeg" alt="">
+                        </div>
+                        <div class="pilihan pilih4">
+                            <img src="destinasi/diving.jpg" alt="">
+                        </div>
+                        <div class="pilihan pilih5">
+                            <img src="destinasi/snorkeling.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        
+    </div>
+
+    <div id="splashScreen" class="splash-screen" style="display: none;">
+        <div class="loader"></div>
+        <h2>Loading...</h2>
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
