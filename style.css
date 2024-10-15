@@ -14,6 +14,23 @@ body{
 }
 
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e67e22; 
+    border-radius: 10px;
+}
+
+
+
+
+
 /* bagian navbar */
 .nav {
     position: fixed;
@@ -24,16 +41,16 @@ body{
 }
 .nav.hidden {
     top: -100px;
+    
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #0a0a11;
     color: white;
-    padding: 0 4vw; 
-    margin: 0 6vw;
-    border-radius: 50px;
+    padding: 0 10vw; 
 }
 .Nama-web {
     font-size: 10px;
@@ -627,6 +644,8 @@ body{
 .banner-pnj .bg-4{
     background-image: url('asset/28.png');
     animation: animasi-bg4 8s linear infinite;
+    left: -200px;
+    top: 100px;
 }
 
 @keyframes animasi-bg5 {
@@ -720,6 +739,33 @@ body{
     background-image: url('asset/34.png');
 }
 
+@keyframes animasi-bg11{
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: translateY(-50px) rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg) translateY(0);
+    }
+}
+.banner-pnj .bg-11{
+    background-image: url('asset/36.png');
+    left: -100px;
+    animation: animasi-bg11 10s linear infinite;
+}
+
+.banner-penjelasan button{
+    background-color: #e67e22;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+}
+.banner-penjelasan a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .line{
     position: absolute;
@@ -846,6 +892,10 @@ body{
 
 
 /* bagian destinasi */
+.destinasi{
+    margin: 150px 0;
+}
+
 .destinasi-diving{
     display: flex;
     flex-direction: column;
@@ -892,31 +942,21 @@ body{
     color: #e67e22;
 }
 
-.keterangan button{
-    width: 30%;
+.keterangan3 button{
+    width: 150px;
     height: 50px;
     border-radius: 8px;
-    color: #e67e22;
-    background-color: #fff;
+    color: white;
+    background-color: #e67e22;
     border: none;
     margin: 20px 0;
+    cursor: pointer;
 }
 .gambar img{
     width: 850px;
     height: 550px;
     border-radius: 8px;
 }
-
-.gambar-utama img {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-}
-
-.gambar-utama img.fade-out {
-    opacity: 0;
-}
-
-
 
 
 /* style piliihan */
@@ -925,10 +965,54 @@ body{
     gap: 50px;
     overflow-x: scroll;
     padding: 50px 0 50px 150px;
+    scrollbar-width: none;
+}
+.semua-pilihan::-webkit-scrollbar{
+    display: none;
 }
 .pilihan img{
     width: 350px;
     height: 250px;
     object-fit: cover;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+
+/* bagian news */
+.News-destination {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    padding: 50px 0 50px 150px;
+    scrollbar-width: none;
+}
+.news {
+    width: 350px;
+    height: 430px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+}
+.news img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.news .isi {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.news .content {
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
 }

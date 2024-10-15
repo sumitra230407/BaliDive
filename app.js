@@ -7,6 +7,35 @@ let listBg2 = document.querySelectorAll('.bg2');
 let listBg3 = document.querySelectorAll('.bg3');
 let peta = document.querySelectorAll('.peta-iteractive');
 
+// Ambil elemen-elemen yang diperlukan
+const gambarUtama = document.getElementById('gambar-utama');
+const judulElement = document.getElementById('judul');
+const deskripsiElement = document.getElementById('deskripsi');
+const informasi = document.getElementById('informasi');
+const moreinfo = document.getElementById('more-info-button');
+const pilihanGambar = document.querySelectorAll('.pilihan');
+
+// Tambahkan event listener ke setiap pilihan gambar
+pilihanGambar.forEach(pilihan => {
+    pilihan.addEventListener('click', () => {
+        // Ambil data dari atribut data-info
+        const info = JSON.parse(pilihan.getAttribute('data-info'));
+
+        // Ganti gambar utama, judul, deskripsi, dan lokasi
+        gambarUtama.src = info.src;
+        judulElement.textContent = info.judul;
+        informasi.textContent = info.informasi;
+        deskripsiElement.innerHTML = `<a href="${info.href}"><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> ${info.lokasi}</a>`;
+        
+        // Pastikan tombol "More Information" tetap sama
+        const buttonContainer = document.getElementById('more-info-button');
+        buttonContainer.innerHTML = "<b>More Information</b>";  // Ini untuk memastikan teks tetap
+
+        moreinfo.onclick = () => {
+            window.location.href = info.moreinfo
+        }
+    });
+});
 
 let oscillationPosition = 0;
 let direction = 1; // 1 for down, -1 for up
@@ -179,3 +208,6 @@ function rightClick() {
 
 // Menambahkan event listener untuk scroll
 window.addEventListener('scroll', handleScroll);
+
+
+
