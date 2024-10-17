@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuba Diving</title>
+    <link rel="stylesheet" href="/css/scubadive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navbar">
+                <div class="Nama-web">
+                    <a href="index.html"><h1>BaliDive</h1></a>
+                </div>
+                <div class="list-nav">
+                    <h1 class="list" data-lang="en">
+                        Home
+                    </h1>
+                    <h1 class="list" data-lang="en">
+                        About Us
+                    </h1>
+                    <h1 class="list" data-lang="en">
+                        Destination
+                    </h1>
+                </div>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="rightClick()">
+                            <img src="asset/BenderaInggris.png" alt="">
+                        </button>
+                        <button type="button" class="toggle-btn" onclick="leftClick()">
+                            <img src="asset/BenderaIndonesia.png" alt="">
+                        </button>
+                        <div class="tooltip">Switch Leangue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Halaman Utama -->
+        <div class="banner">
+            <div class="bg bg-1"></div>
+            <div class="bg bg-2"></div>
+            <h1>
+                Scuba Diving
+            </h1>
+            <div class="bg bg-3"></div>
+            <div class="bg bg-4"></div>
+            <div class="bg bg-5"></div>
+            <div class="bg bg-6"></div>
+            <div class="bg bg-7"></div>
+            <div class="bg bg-8"></div>
+            <div class="bg bg-9"></div>
+        </div>
+        <!-- Penutup Halaman Utama -->
+
+        <div class="Penjelasan">
+            <div class="gambar-penjelasan">
+                <div class="video">
+                    <img src="asset/diving.jpg" alt="">
+                </div>
+                <div class="gambar">
+                    <div class="gambar1">
+                        <img src="asset-snorkeling/Bondalem-Eco-Dive.jpg" alt="">
+                    </div>
+                    <div class="gambar2">
+                        <img src="destinasi/Dune.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="judul">
+                <h1 class="animation-show"  data-lang="en">
+                    About <span class="primer">Scuba Diving</span>
+                </h1>
+                <label for="" class="animation-show" data-lang="en">
+                    Scuba diving is an activity of diving below the water's surface using breathing equipment like an oxygen tank (scuba gear). It allows divers to explore the ocean depths for a longer time since they can breathe through the equipment. This activity is typically done to enjoy underwater beauty, such as coral reefs, fish, and other marine life.            
+                </label>
+            </div>
+        </div>
+        
+        <div class="jenis-jenis">
+            <div class="jenis jenis-1">
+                <div class="full-penjelasan">
+                    <div class="penjelasan-jenis">
+                        <h1 class="primer">Fun Dive / Recreational Diving</h1>
+                        <label for="">
+                            Fun dive or recreational diving is a diving activity done for recreation and enjoyment, without the need to reach extreme depths or hazardous conditions. Typically, the diving depth is limited to 30 meters (100 feet), and divers use standard scuba equipment. This activity focuses more on exploring the underwater environment, such as observing coral reefs, fish, and other marine life. Fun diving is suitable for divers who want to enjoy underwater beauty without requiring advanced training.
+                        </label>
+                        <div class="info-tambahan">
+                            <div class="info">
+                                <img src="asset-snorkeling/sertifikasi.png" alt="">
+                                <label for="">Memiliki sertifikasi penyelam (Open Water atau Advanced Open Water)</label>
+                            </div>
+                            <div class="info">
+                                <img src="asset-snorkeling/kedalaman.png" alt="">
+                                <label for="">Kedalaman 18-30 meter (tergantung sertifikasi)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gambar-penjelasan-jenis">
+                        <img src="asset-snorkeling/Bondalem-Eco-Dive.jpg" alt="">
+                    </div>
+                </div>
+                <div class="alat-alat">
+                    <div class="alat1">
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/snorkel.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Snorkel adalah pipa yang memungkinkan kamu bernapas saat wajah berada di dalam air. Pipa ini biasanya terbuat dari plastik atau silikon.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/baju.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Wet suit adalah pakaian yang terbuat dari bahan neoprene yang membantu menjaga suhu tubuh saat snorkeling di air dingin.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/fins.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Fins adalah alat tambahan di kaki yang membantu meningkatkan efisiensi berenang di dalam air.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/scuba-tank.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Pelampung memberikan tambahan keamanan bagi pemula atau mereka yang tidak yakin dengan kemampuan renang.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jenis jenis-2">
+                <div class="full-penjelasan">
+                    <div class="gambar-penjelasan-jenis">
+                        <img src="asset/diving.jpg" alt="">
+                    </div>
+                    <div class="penjelasan-jenis">
+                        <h1 class="primer">Technical Diving</h1>
+                        <label for="">
+                            Technical diving is a more challenging and complex form of diving compared to recreational diving. This activity involves diving at depths beyond 40 meters (130 feet) and often uses mixed gases, such as trimix or nitrox, as well as additional equipment like multiple tanks or rebreathers. Technical diving is often done in more difficult-to-access locations, such as underwater caves, shipwrecks, or environments with demanding conditions. Due to its higher risk level, technical divers must undergo specialized training to master the required diving techniques.
+                        </label>
+                        <div class="info-tambahan">
+                            <div class="info">
+                                <img src="asset-snorkeling/sertifikasi.png" alt="">
+                                <label for="">Memerlukan sertifikasi khusus seperti Technical Diver Certification</label>
+                            </div>
+                            <div class="info">
+                                <img src="asset-snorkeling/kedalaman.png" alt="">
+                                <label for="">Kedalaman 40 lebih</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alat-alat">
+                    <div class="alat1">
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/snorkel.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Snorkel adalah pipa yang memungkinkan kamu bernapas saat wajah berada di dalam air. Pipa ini biasanya terbuat dari plastik atau silikon.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/baju.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Wet suit adalah pakaian yang terbuat dari bahan neoprene yang membantu menjaga suhu tubuh saat snorkeling di air dingin.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/fins.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Fins adalah alat tambahan di kaki yang membantu meningkatkan efisiensi berenang di dalam air.</div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/double-tank.png" alt="">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi">Pelampung memberikan tambahan keamanan bagi pemula atau mereka yang tidak yakin dengan kemampuan renang.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="map">
+            <div class="gradasi-atas"></div> <!-- Gradasi di atas -->
+            <div class="gradasi-bawah"></div> <!-- Gradasi di bawah -->
+            
+            <div class="judul-map">
+                <h1>Diving Location in Bali</h1>
+                <label for="">Places in Bali that provide the best quality snorkeling</label>
+            </div>
+            
+            <div class="tombol-map">
+                <a href="https://shorturl.at/n2SDG">Show Map</a>
+            </div>
+        </div>
+        
+    
+        <div class="destinasi">
+            <div class="destinasi-diving">
+                <div class="gambar-utama">
+                    <div class="keterangan">
+                        <div class="keterangan1">
+                            <h1 id="judul">Bali Fun Dive</h1>
+                            <p id="deskripsi"><a href=""><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> Sanur, Denpasar City</a></p>
+                        </div>
+                        <div class="keterangan2">
+                            <label id="informasi">Bali Fun Dive adalah pengalaman menyelam yang menarik di Bali, menawarkan petualangan bawah laut yang luar biasa untuk para penyelam dari berbagai tingkat keahlian. Bali Fun Dive memberikan akses ke lokasi menyelam yang menakjubkan dengan visibilitas tinggi dan keanekaragaman hayati yang kaya. Para peserta dapat menikmati keindahan terumbu karang, ikan berwarna-warni</label>
+                        </div>
+                        <div class="keterangan3">
+                            <button id="more-info-button"><b><label for="">More Information</label></b></button>
+                        </div>                            
+                    </div>
+                    <div class="gambar">
+                        <img id="gambar-utama" src="destinasi/2023-12-17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="semua-pilihan">
+                    <div class="pilihan pilih1" data-info='{"judul": "Bali Fun Dive", "informasi": "Bali Fun Dive adalah pengalaman menyelam yang menarik di Bali, menawarkan petualangan bawah laut yang luar biasa untuk para penyelam dari berbagai tingkat keahlian. Bali Fun Dive memberikan akses ke lokasi menyelam yang menakjubkan dengan visibilitas tinggi dan keanekaragaman hayati yang kaya. Para peserta dapat menikmati keindahan terumbu karang, ikan berwarna-warni", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 1", "src": "destinasi/2023-12-17.jpg", "href": "https://shorturl.at/NHMW9", "moreinfo": "https://www.balifundiving.com/"}'>
+                        <img src="destinasi/2023-12-17.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih2" data-info='{"judul": "Tulamben Diving", "informasi": "Tulamben adalah surga diving di Bali dengan keindahan bawah laut yang memukau, termasuk bangkai kapal USS Liberty yang ikonik, visibilitas tinggi, dan keanekaragaman hayati yang kaya, menjadikannya cocok untuk penyelam dari semua tingkat keahlian, sambil menawarkan pengalaman eco-diving yang ramah lingkungan.", "lokasi": "Tulamben, Kubu, Karangasem", "deskripsi": "Deskripsi gambar 2", "src": "destinasi/Tulamben.jpg", "href": "https://shorturl.at/BaiZV", "moreinfo": "https://www.tulambendive.com/"}'>
+                        <img src="destinasi/Tulamben.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih3" data-info='{"judul": "Dune Atlantis Bali", "informasi": "Dune Atlantis Bali adalah destinasi wisata yang menawarkan pengalaman unik bagi para pencinta olahraga air dan petualangan di Bali. Terletak di Pantai Canggu, Dune Atlantis Bali dikenal sebagai pusat untuk berbagai aktivitas laut yang seru, seperti berselancar, menyelam, dan snorkeling.", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 3", "src": "destinasi/Dune.jpg", "href": "link_ke_tulamben.html", "moreinfo": "moreinfo"}'>
+                        <img src="destinasi/Dune.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih4" data-info='{"judul": "Bondalem Eco Dive", "informasi": "Bondalem merupakan destinasi yang memiliki suasana tenang dan alami. Dengan paket lengkap mulai dari Snorkeling hingga Coral Conservation menawarkan pengalaman menyelam yang tidak hanya seru tetapi juga mendukung konservasi laut, menjadikannya pilihan sempurna bagi para pecinta alam dan penyelam yang peduli lingkungan.", "lokasi": "Bondalem, Kec.Tejakula Kab.Buleleng", "deskripsi": "Deskripsi gambar 4", "src": "destinasi/Bondalem.jpg", "href": "link_ke_tulamben.html", "moreinfo": "https://bondalemecodive.com/"}'>
+                        <img src="asset-snorkeling/Bondalem-Eco-Dive.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih5" data-info='{"judul": "DPM Diving Nusa Penida", "informasi": "DPM Diving Nusa Penida adalah penyedia layanan menyelam di Nusa Penida yang menawarkan pengalaman menyelam aman dengan instruktur berpengalaman, menjelajahi lokasi indah seperti Manta Point dan Crystal Bay, sambil mengedepankan pelestarian lingkungan dan memberikan suasana yang ramah bagi semua penyelam.", "lokasi": "Toyapakeh, Kec.Nusa Penida Kab. Klungkung", "deskripsi": "Deskripsi gambar 5", "src": "destinasi/DPM Diving Nusa Penida.jpg", "href": "link_ke_tulamben.html", "moreinfo": "moreinfo"}'>
+                        <img src="destinasi/DPM Diving Nusa Penida.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="snorkeling.js"></script>
+</body>
+</html>
