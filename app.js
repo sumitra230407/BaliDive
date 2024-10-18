@@ -43,6 +43,24 @@ let direction = 1; // 1 for down, -1 for up
 let lastScrollTop = 0;
 const navbar = document.querySelector('.nav');
 
+document.querySelectorAll('.list').forEach(item => {
+    item.addEventListener('click', function() {
+        // Menghapus kelas 'active' dari semua elemen
+        document.querySelectorAll('.list').forEach(el => el.classList.remove('active'));
+        
+        // Menambahkan kelas 'active' ke elemen yang diklik
+        this.classList.add('active');
+        
+        // Mendapatkan target id dari atribut data-target
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        
+        // Menggulung ke bagian yang sesuai
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
 // Event listener untuk scroll navbar
 window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;

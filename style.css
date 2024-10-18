@@ -87,6 +87,13 @@ body{
 .list-nav h1:hover{
     color: #e67e22;
 }
+.list.active {
+    color: #e67e22;
+}
+.list-nav h1.list:hover::after.active{
+    width: 100%;
+    background-color: #e67e22;
+}
 .button-box {
     display: flex;
 	width: 100px;
@@ -362,14 +369,15 @@ body{
 
 .main-card {
     display: flex;
+    align-items: center;
     color: white;
-    gap: 80px;
-    padding: 0 150px;
+    gap: 5vw;
+    padding: 0 10vw;
 }
 
 .card {
-    width: 500px;
-    height: 500px;
+    width: 60vw;
+    height: 30vw;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -919,8 +927,9 @@ body{
 }
 .keterangan{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 2vw;
     padding: 6vw 5vw 6vw 10vw;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     transform: translateY(20px);
@@ -928,7 +937,7 @@ body{
 .keterangan1{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.1vw;
 }
 .keterangan1 h1{
     font-size: 5vh;
@@ -937,14 +946,15 @@ body{
     color: white;
 }
 .keterangan2 label{
-    font-size: 2.3vh;
+    font-size: 2vh;
 }
-
-
+.gambar-utama .gambar{
+    display: flex;
+    align-items: center;
+}
 .keterangan h1{
     color: #e67e22;
 }
-
 .keterangan3 button{
     width: 10vw;
     height: 3vw;
@@ -954,6 +964,7 @@ body{
     border: none;
     margin: 2vw 0;
     cursor: pointer;
+    font-size: 1vw;
 }
 .gambar img{
     height: 35vw;
@@ -981,61 +992,83 @@ body{
 }
 
 
-/* bagian news */
+@media (max-width: 500px) {
+
+    .banner{
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .keterangan1 h1{
+        font-size: 3vh;
+    }
+    .keterangan2 label{
+        font-size: 1.5vh;
+    }
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+    }
+    
+    .card {
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+
+/* bagian news
 .News-destination {
     display: flex;
     align-items: flex-end;
     gap: 4vw;
     overflow-x: scroll;
     height: 40vw;
-    padding: 50px 0 50px 150px;
+    padding: 3vw 0 3vw 10vw;
     scrollbar-width: none;
-    margin: 50vh 0;
+    margin: 20vw 0;
 }
 
 .news-utama {
-    width: 450px;
-    height: 530px;
+    width: 40vw;
+    height: 36vw;
     background-color: #fff;
     border-radius: 12px;
     position: relative;
 }
 .news-utama img {
-    width: 450px;
-    height: 350px;
+    width: 40vw;
+    height: 24vw;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
 }
-
 .news {
-    width: 350px;
-    height: 430px;
+    width: 45vw;
+    height: 30vw;
     background-color: #fff;
     border-radius: 12px;
     position: relative;
 }
 .news img {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 15vw;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
 }
 .isi {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 2vw;
+    gap: 1vw;
 }
-.content {
-    max-height: 60px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 .read-more {
     color: #007BFF;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 .footer{
     display: flex;
