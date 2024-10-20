@@ -11,13 +11,14 @@ body{
     background-color: #0a0a11;
     font-family: 'Poppins' , sans-serif;
     font-size: 15px;
+    width: 100vw;
+
 }
 
-/* bagian navbar */
 .nav {
     position: fixed;
     z-index: 999;
-    width: 100%;
+    width: 100vw;
     top: 0;
     transition: top 0.9s ease;
 }
@@ -30,7 +31,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #0a0a11; */
+    background-color: #0a0a11;
     color: white;
     padding: 0 10vw; 
 }
@@ -135,7 +136,6 @@ body{
 }
 
 
-/* bagian halaman pembuka */
 .banner{
     height: 100vh;
     position: relative;
@@ -149,7 +149,6 @@ body{
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
     background-position: center bottom;
     transition: 0.1s;
 }
@@ -182,9 +181,6 @@ body{
     animation: animation-bg6 8s;
 }
 
-/* top: 50px;
-left: -20px; */
-
 @keyframes animation-bg7{
     0% {
         transform: rotate(-4deg);
@@ -214,7 +210,7 @@ left: -20px; */
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 11rem;
+    font-size: 12vw;
     font-family: 'Pacifico', cursive;
     color: #fff;
 }
@@ -233,7 +229,6 @@ left: -20px; */
     color: #e67e22;
 }
 
-/* style bagian title about us*/
 .judul{
     flex: 1;
     display: flex;
@@ -243,15 +238,30 @@ left: -20px; */
     color: white;
 }
 .judul h1{
-    font-size: 48px;
+    font-size: 3vw;
     margin-top: 0;
 }
 .judul label{
-    font-size: 20px;
+    font-size: 1.5vw;
 }
-/* style bagian title about us*/
 
-
+.info-tambahan{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.info label{
+    font-size: 01vw;
+}
+.info img{
+    width: 1.2vw;
+    height: 1.2vw;
+}
 
 .peralatan{
     display: flex;
@@ -265,7 +275,7 @@ left: -20px; */
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.2vw;
     padding: 3vw 8vw 3vw 5vw;
     gap: 2vw;
 }
@@ -295,10 +305,16 @@ left: -20px; */
     border: 2px solid #e67e22;
     color: white;
     padding: 2vw;
-    font-size: 12px;
+    font-size: 0.8vw;
     gap: 0.5vw;
 }
-
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 0.5vw;
+    color: #e67e22;
+}
 .alat img{
     width: 1.8vw;
 }
@@ -341,8 +357,6 @@ left: -20px; */
     background-size: cover;
 }
 
-
-/* style map */
 .map{
     position: relative; 
     overflow: hidden;
@@ -351,7 +365,7 @@ left: -20px; */
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     height: 40vw;
     background-image: url('asset-snorkeling/map.png');
     background-repeat: no-repeat;
@@ -363,6 +377,8 @@ left: -20px; */
     font-size: 1.6vw;
 }
 .tombol-map{
+    position: relative;
+    z-index: 2;
     padding: 1vw 2vw;
     background-color: #e67e22;
     border-radius: 8px;
@@ -378,7 +394,7 @@ left: -20px; */
     top: 0;
     left: 0;
     right: 0;
-    height: 200px; 
+    height: 10vw; 
     background: linear-gradient(to bottom, #0a0a11, transparent);
     z-index: 1;
 }
@@ -388,12 +404,10 @@ left: -20px; */
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 10vw;
     background: linear-gradient(to top, #0a0a11, transparent);
     z-index: 1;
 }
-
-/* bagian destinasi */
 
 .destinasi-diving{
     display: flex;
@@ -410,59 +424,53 @@ left: -20px; */
 }
 .keterangan{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    padding: 100px 70px 100px 150px;
+    gap: 2vw;
+    padding: 6vw 5vw 6vw 10vw;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     transform: translateY(20px);
 }
 .keterangan1{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.1vw;
+}
+.keterangan1 h1{
+    font-size: 5vh;
 }
 .keterangan1 a{
     color: white;
 }
 .keterangan2 label{
-    font-size: 16px;
+    font-size: 2vh;
 }
-.keterangan2 p{
-    font-size: 14px;
-}
-.keterangan3{
+.gambar-utama .gambar{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-top: 10px;
+    align-items: center;
 }
-
-
 .keterangan h1{
     color: #e67e22;
 }
-
 .keterangan3 button{
-    width: 150px;
-    height: 50px;
+    width: 10vw;
+    height: 3vw;
     border-radius: 8px;
     color: white;
     background-color: #e67e22;
     border: none;
     margin: 2vw 0;
     cursor: pointer;
+    font-size: 1vw;
 }
 .gambar img{
-    width: 55vw;
-    height: 75vh;
+    height: 35vw;
     border-radius: 8px;
 }
 
-
-/* style piliihan */
 .semua-pilihan{
     display: flex;
-    gap: 50px;
+    gap: 3vw;
     overflow-x: scroll;
     padding: 5vh 0 5vh 10vw;
     scrollbar-width: none;
@@ -472,8 +480,187 @@ left: -20px; */
 }
 .pilihan img{
     width: 28vw;
-    height: 35vh;
+    height: 20vw;
     object-fit: cover;
     border-radius: 12px;
     cursor: pointer;
+}
+
+
+@media (max-width: 720px) {
+
+    .banner{
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .keterangan1 h1{
+        font-size: 3vh;
+    }
+    .keterangan2 label{
+        font-size: 1.5vh;
+    }
+
+    .banner .bg-1{
+        background-image: url('tampilanhp/hp6.png');
+    }
+    .banner .bg-2{
+        background-image: url('tampilanhp/hp7.png');
+    }
+    .banner .bg-3{
+        background-image: url('tampilanhp/hp8.png');
+    }
+    .banner .bg-4{
+        background-image: url('tampilanhp/hp9.png');
+    }
+    .banner .bg-5{
+        background-image: url('tampilanhp/hp10.png');
+    }
+    
+    @keyframes animation-bg6{
+        0% {
+            transform: translate(-30px, 20px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    .banner .bg-6{
+        background-image: url('tampilanhp/hp11.png');
+        animation: animation-bg6 8s;
+    }
+    
+    @keyframes animation-bg7{
+        0% {
+            transform: rotate(-4deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .banner .bg-7{
+        background-image: url('tampilanhp/hp12.png');
+        top: -45px;
+        rotate: -12deg;
+        left: 10px;
+        animation: animation-bg7 8s;
+    }
+    .banner .bg-8{
+        background-image: url('tampilanhp/h13.png');
+        top: 420px;
+    }
+    .banner .bg-9{
+        background-image: url('tampilanhp/hp14.png');
+    }
+    
+    .banner  h1{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12vw;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+    }
+}
+
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0); 
+    color: white; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+    z-index: 999;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3); 
+    border-top: 8px solid #ffffff; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    animation: spin 1s linear infinite; 
+    margin-bottom: 20px; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.9s;
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 8vw;
+    width: 100%;
+    height: 18vw;
+    border-top: 2px  solid #e67e22;
+    color: white;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.part1 h1, a{
+    color: white;
+    text-decoration: none;
+}
+.footer h1{
+    font-family: 'Pacifico', cursive;
+}
+.part1 h1:hover{
+    color: #e67e22;
+}
+.sosial-media .fa-brands{
+    width: 3vw;
+    font-size: 1.5vw;
+    color: white;
+}
+.sosial-media .fa-brands:hover{
+    color: #e67e22;
+}
+.footer .part2{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+.footer button{
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000000;
+}
+.footer button:hover{
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    background-color: #fff;
 }
