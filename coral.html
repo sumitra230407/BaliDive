@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Dive</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="https://kit.fontawesome.com/33fe24c48c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navbar">
+                <div class="Nama-web">
+                    <a href="index.html"><h1>BaliDive</h1></a>
+                </div>
+                <div class="list-nav">
+                    <h1 class="list" data-lang="id"  data-target="home">
+                        Halaman Utama
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="home">
+                        Home
+                    </h1>
+                    <h1 class="list" data-lang="id" data-target="about">
+                        Tentang Coral Conservation
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="about">
+                        About Coral Conservation
+                    </h1>
+                    <h1 class="list" data-lang="id" data-target="recomendation">
+                        Rekomendasi Kami
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="recomendation">
+                        Our Recomendation
+                    </h1>
+                </div>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="rightClick()">
+                            <img src="asset/BenderaInggris.png" alt="">
+                        </button>
+                        <button type="button" class="toggle-btn" onclick="leftClick()">
+                            <img src="asset/BenderaIndonesia.png" alt="">
+                        </button>
+                        <div class="tooltip">Switch Leangue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner" id="home">
+            <div class="bg bg-1"></div>
+            <div class="bg bg-2"></div>
+            <h1 style="font-size: 8vw;"> 
+                Coral Conservation
+            </h1>
+            <div class="bg bg-3"></div>
+            <div class="bg bg-4"></div>
+            <div class="bg bg-5"></div>
+            <div class="bg bg-6"></div>
+            <div class="bg bg-7"></div>
+            <div class="bg bg-8"></div>
+            <div class="bg bg-9"></div>
+        </div>
+
+        <div class="Penjelasan" id="about">
+            <div class="gambar-penjelasan">
+                <div class="video" >
+                    <img src="destinasi/northbalireefconservation.JPG" alt="" class="animation-show">
+                </div>
+                <div class="gambar" >
+                    <div class="gambar1">
+                        <img src="destinasi/coral-conservation.JPG" alt="" class="animation-show">
+                    </div>
+                    <div class="gambar2">
+                        <img src="destinasi/KalanganyarCoralReef.jpg" alt="" class="animation-show">
+                    </div>
+                </div>
+            </div>
+            <div class="judul">
+                <h1 class="animation-show" data-lang="en">
+                    About <span class="primer">Coral Conservation</span>
+                </h1>
+                <h1 class="animation-show"  data-lang="id">
+                    Tentang <span class="primer">Coral Conservation</span>
+                </h1>
+                <label for="" class="animation-show" data-lang="en">
+                    Coral conservation refers to the efforts aimed at protecting, restoring, and maintaining the health of coral reef ecosystems. Coral reefs are incredibly important for marine life, serving as habitats for a diverse array of marine species, including fish, crustaceans, and other sea creatures. They also play a crucial role in protecting coastal areas from erosion and storm damage, and they support local economies through tourism and fishing.             
+                </label>
+                <label for="" class="animation-show" data-lang="id">
+                    Konservasi terumbu karang adalah upaya untuk melindungi, merestorasi, dan menjaga kesehatan ekosistem terumbu karang. Terumbu karang sangat penting bagi kehidupan laut, karena menjadi habitat bagi berbagai macam spesies laut seperti ikan, krustasea, dan makhluk laut lainnya. Selain itu, terumbu karang juga berperan penting dalam melindungi wilayah pesisir dari erosi dan kerusakan akibat badai serta mendukung perekonomian lokal melalui pariwisata dan perikanan.            
+                </label>
+            </div>
+        </div>
+        
+        <div class="jenis-jenis">
+            <div class="jenis jenis-1">
+                <div class="full-penjelasan">
+                    <div class="penjelasan-jenis">
+                        <h1 class="primer" class="animation-show">Pengalaman Conservation</h1>
+                        <label for="" data-lang="en"  class="animation-show">
+                            Coral Reef Conservation experiences can vary depending on the provider. In some coral reef conservation programs, tourists or visitors are given the opportunity to actively participate in coral reef restoration efforts. Typically, these programs involve:
+                        </label>
+                        <label for="" data-lang="id"  class="animation-show">
+                            Pengalaman Konservasi Terumbu Karang bisa bervariasi tergantung pada tempat penyedia. Di beberapa program konservasi terumbu karang, wisatawan atau pengunjung diberikan kesempatan untuk berpartisipasi secara aktif dalam upaya pemulihan terumbu karang. Biasanya, program ini melibatkan:
+                        </label>
+                        <div class="info-tambahan">
+                            <div class="info">
+                                <img src="asset-snorkeling/sertifikasi.png" alt=""  class="animation-show"> 
+                                <label for="" data-lang="en" class="animation-show">
+                                    get a certificate
+                                </label>
+                                <label for="" data-lang="id" class="animation-show">
+                                    Mendapatkan sertifikat
+                                </label>
+                            </div>
+                            <div class="info">
+                                <img src="asset-snorkeling/kedalaman.png" alt="" class="animation-show">
+                                <label for="" data-lang="en" class="animation-show">
+                                    Depth of 3-10 meters
+                                </label>
+                                <label for="" data-lang="id" class="animation-show">
+                                    Kedalaman 3-10 meter
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gambar-penjelasan-jenis">
+                        <img src="destinasi/coral-conservation.JPG" alt="" class="animation-show">
+                    </div>
+                </div>
+                <div class="alat-alat">
+                    <div class="alat1">
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/edukasi.png" alt=""  class="animation-show">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi" data-lang="en">
+                                Before planting, visitors receive information about the importance of coral reefs, threats to their survival, and the specific techniques used to restore them.
+                            </div>
+                            <div class="isi" data-lang="id">
+                                Sebelum melakukan penanaman, pengunjung diberikan informasi mengenai pentingnya terumbu karang, ancaman yang dihadapinya, dan teknik-teknik khusus yang digunakan dalam pemulihan terumbu karang.
+                            </div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/terumbu karang.png" alt=""  class="animation-show">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi" data-lang="id">
+                                Pengunjung dibimbing oleh penyelam terlatih atau ahli biologi laut untuk menanam fragmen terumbu karang kecil di terumbu karang yang telah ditentukan.
+                            </div>
+                            <div class="isi" data-lang="en">
+                                Visitors are guided by trained divers or marine biologists to plant small coral fragments onto designated reefs.
+                            </div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/biota.png" alt=""  class="animation-show">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi" data-lang="id" >
+                                Sembari pengunjung menanam terumbu karang, pengunjung juga bisa melihat pesona biota laut
+                            </div>
+                            <div class="isi" data-lang="en">
+                                While visitors are planting coral reefs, visitors can also see the charm of marine biota.
+                            </div>
+                        </div>
+                        <div class="alat">
+                            <div class="icon">
+                                <img src="asset-snorkeling/mantau.png" alt=""  class="animation-show">
+                            </div>
+                            <div class="line"></div>
+                            <div class="isi" data-lang="id">
+                                Banyak program hyang menawarkan kesempatan bagi peserta untuk tetap terhubung dengan perkembangan terumbu karang mereka melalui email atau portal web yang disediakan
+                            </div>
+                            <div class="isi" data-lang="en">
+                                Many programs offer opportunities for participants to stay connected with the progress of their coral reefs through email or a provided web portal.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="map">
+            <div class="gradasi-atas"></div> 
+            <div class="gradasi-bawah"></div> 
+            
+            <div class="judul-map">
+                <h1 data-lang="en" class="animation-show">Coral Conservation Location in Bali</h1>
+                <h1 data-lang="id" class="animation-show">Lokasi Coral Conservation di Bali</h1>
+                <label for="" data-lang="en" class="animation-show">Places in Bali that provide the best quality Coral Conservation program</label>
+                <label for="" data-lang="id" class="animation-show">Tempat di Bali yang menawarkan program Coral Conservation terbaik</label>
+            </div>
+            
+            <div class="tombol-map">
+                <a href="https://tinyurl.com/3smphf87" data-lang="en">Show Map</a>
+                <a href="https://tinyurl.com/3smphf87" data-lang="id">Buka Peta</a>
+            </div>
+        </div>
+        
+    
+        <div class="destinasi">
+            <div class="destinasi-diving">
+                <div class="gambar-utama" id="recomendation">
+                    <div class="keterangan">
+                        <div class="keterangan1">
+                            <h1 id="judul">Bondalem Eco Dive</h1>
+                            <p id="deskripsi"><a href="https://bondalemecodive.com/"><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Bondalem, Teajkula, Buleleng</a></p>
+                        </div>
+                        <div class="keterangan2">
+                            <label id="informasi">The Coral Reef Conservation Program at Bondalem Eco Dive offers a unique opportunity for ocean lovers and eco-conscious travelers to contribute directly to the preservation of Bali’s marine ecosystem. After planting your coral, the journey doesn’t stop there. Bondalem Eco Dive provides regular updates on the progress of your planted coral. Through photos and videos, you can see how your efforts are helping to transform a barren underwater landscape into a thriving coral garden.</label>
+                        </div>
+                        <div class="keterangan3">
+                            <button id="more-info-button" data-default-url="https://bondalemecodive.com/">
+                                <b>More Information</b>
+                            </button>
+                        </div>                            
+                    </div>
+                    <div class="gambar">
+                        <img id="gambar-utama" src="destinasi/coral-conservation.JPG" alt="">
+                    </div>
+                </div>
+                <div class="semua-pilihan">
+                    <div class="pilihan pilih1" data-lang="en" data-info='{"judul": "Bondalem Eco Dive", "informasi": "The Coral Reef Conservation Program at Bondalem Eco Dive offers a unique opportunity for ocean lovers and eco-conscious travelers to contribute directly to the preservation of Bali’s marine ecosystem. After planting your coral, the journey doesn’t stop there. Bondalem Eco Dive provides regular updates on the progress of your planted coral. Through photos and videos, you can see how your efforts are helping to transform a barren underwater landscape into a thriving coral garden.", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 1", "src": "destinasi/coral-conservation.JPG", "href": "https://bondalemecodive.com/", "moreinfo": "https://bondalemecodive.com/"}'>
+                        <img src="destinasi/coral-conservation.JPG" alt="">
+                    </div>
+                    <div class="pilihan pilih2" data-lang="en" data-info='{"judul": "North Bali Reef Conservation", "informasi": "North Bali Reef Conservation is a non-governmental organization and coral reef restoration program based in the small fishing village of Tianyar on the northeast coast of Bali. The initiative focuses on engaging local communities and international volunteers to address the challenges facing coral reefs.", "lokasi": "Tianyar, Kubu, Karangasem", "deskripsi": "Deskripsi gambar 2", "src": "destinasi/northbalireefconservation.JPG", "href": "https://www.google.com/maps/place/North+Bali+Reef+Conservation/@-8.1919673,115.4921324,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd1fa612d0007fd:0x4617affbb94e35ca!8m2!3d-8.1919726!4d115.4947073!16s%2Fg%2F11f26q67hn?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D", "moreinfo": "https://northbalireefconservation.com/"}'>
+                        <img src="destinasi/northbalireefconservation.JPG" alt="">
+                    </div>
+                    <div class="pilihan pilih5" data-lang="en" data-info='{"judul": "Kalanganyar Coral Reef", "informasi": "Adventure scuba diving in Bali offers divers the opportunity to explore a rich underwater ecosystem, vibrant coral reefs, and unique marine life. Bali is known for its diverse diving locations, each providing different experiences and challenges.", "lokasi": " Banjar Asem, Seririt, Buleleng", "deskripsi": "Deskripsi gambar 5", "src": "destinasi/KalanganyarCoralReef.jpg", "href": "https://tinyurl.com/4jsr3st5", "moreinfo": "https://globalvillagefoundationbali.com/coral-reef-project"}'>
+                        <img src="destinasi/KalanganyarCoralReef.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih3" data-lang="en" data-info='{"judul": "Dune Atlantis Bali", "informasi": "Dune Atlantis Bali is a tourist destination offering a unique experience for water sports and adventure lovers in Bali. Located at Canggu Beach, Dune Atlantis Bali is known as a hub for various exciting marine activities, such as surfing, diving, and snorkeling.", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 3", "src": "destinasi/Dune.jpg", "href": "https://tinyurl.com/mryhpj2r", "moreinfo": "https://www.atlantis-bali-diving.com/"}'>
+                        <img src="destinasi/Dune.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih4" data-lang="en" data-info='{"judul": "Bondalem Eco Dive", "informasi": "Bondalem is a destination that offers a calm and natural atmosphere. With complete packages ranging from snorkeling to coral conservation, it provides diving experiences that are not only exciting but also support marine conservation, making it a perfect choice for nature lovers and environmentally conscious divers.", "lokasi": "Bondalem, Kec.Tejakula Kab.Buleleng", "deskripsi": "Deskripsi gambar 4", "src": "asset-snorkeling/Bondalem-Eco-Dive.jpg", "href": "link_ke_tulamben.html", "moreinfo": "https://bondalemecodive.com/"}'>
+                        <img src="asset-snorkeling/Bondalem-Eco-Dive.jpg" alt="">
+                    </div>
+
+
+                    <div class="pilihan pilih1" data-lang="id" data-info='{"judul": "Bondalem Eco Dive", "informasi": "Program Konservasi Terumbu Karang di Bondalem Eco Dive menawarkan kesempatan unik bagi para pencinta laut dan wisatawan yang peduli lingkungan untuk berkontribusi langsung terhadap pelestarian ekosistem laut Bali. Setelah menanam karang, perjalanan tidak berhenti di situ. Bondalem Eco Dive memberikan informasi terkini secara berkala tentang perkembangan karang yang Anda tanam. Melalui foto dan video, Anda dapat melihat bagaimana upaya Anda membantu mengubah lanskap bawah laut yang tandus menjadi taman karang yang subur.", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 1", "src": "destinasi/coral-conservation.JPG", "href": "link_ke_tulamben.html", "moreinfo": "https://bondalemecodive.com/"}'>
+                        <img src="destinasi/coral-conservation.JPG" alt="">
+                    </div>
+                    <div class="pilihan pilih2" data-lang="id" data-info='{"judul": "North Bali Reef Conservation", "informasi": "North Bali Reef Conservation adalah lembaga swadaya masyarakat dan program pemulihan terumbu karang yang berpusat di desa nelayan kecil Tianyar di pesisir timur laut Bali. Inisiatif ini berfokus pada pelibatan masyarakat lokal dan relawan internasional untuk mengatasi tantangan yang dihadapi terumbu karang.", "lokasi": "Tianyar, Kubu, Karangasem", "deskripsi": "Deskripsi gambar 2", "src": "destinasi/northbalireefconservation.JPG", "href": "https://www.google.com/maps/place/North+Bali+Reef+Conservation/@-8.1919673,115.4921324,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd1fa612d0007fd:0x4617affbb94e35ca!8m2!3d-8.1919726!4d115.4947073!16s%2Fg%2F11f26q67hn?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D", "moreinfo": "https://northbalireefconservation.com/"}'>
+                        <img src="destinasi/northbalireefconservation.JPG" alt="">
+                    </div>
+                    <div class="pilihan pilih5" data-lang="id" data-info='{"judul": "Kalanganyar Coral Reef", "informasi": "Menyelam di Bali menawarkan kesempatan bagi para penyelam untuk menjelajahi ekosistem bawah laut yang kaya, terumbu karang yang berwarna-warni, dan kehidupan laut yang unik. Bali dikenal dengan lokasi menyelamnya yang beragam, masing-masing menawarkan pengalaman dan tantangan yang berbeda.", "lokasi": " Banjar Asem, Seririt, Buleleng", "deskripsi": "Deskripsi gambar 5", "src": "destinasi/KalanganyarCoralReef.jpg", "href": "https://tinyurl.com/4jsr3st5", "moreinfo": "https://globalvillagefoundationbali.com/coral-reef-project"}'>
+                        <img src="destinasi/KalanganyarCoralReef.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih3" data-lang="id" data-info='{"judul": "Dune Atlantis Bali", "informasi": "Dune Atlantis Bali adalah destinasi wisata yang menawarkan pengalaman unik bagi para pencinta olahraga air dan petualangan di Bali. Terletak di Pantai Canggu, Dune Atlantis Bali dikenal sebagai pusat untuk berbagai aktivitas laut yang seru, seperti berselancar, menyelam, dan snorkeling.", "lokasi": "Sanur, Denpasar City", "deskripsi": "Deskripsi gambar 3", "src": "destinasi/Dune.jpg", "href": "https://tinyurl.com/mryhpj2r", "moreinfo": "https://www.atlantis-bali-diving.com/"}'>
+                        <img src="destinasi/Dune.jpg" alt="">
+                    </div>
+                    <div class="pilihan pilih4" data-lang="id" data-info='{"judul": "Bondalem Eco Dive", "informasi": "Bondalem merupakan destinasi yang memiliki suasana tenang dan alami. Dengan paket lengkap mulai dari Snorkeling hingga Coral Conservation menawarkan pengalaman menyelam yang tidak hanya seru tetapi juga mendukung konservasi laut, menjadikannya pilihan sempurna bagi para pecinta alam dan penyelam yang peduli lingkungan.", "lokasi": "Bondalem, Kec.Tejakula Kab.Buleleng", "deskripsi": "Deskripsi gambar 4", "src": "asset-snorkeling/Bondalem-Eco-Dive.jpg", "href": "link_ke_tulamben.html", "moreinfo": "https://bondalemecodive.com/"}'>
+                        <img src="asset-snorkeling/Bondalem-Eco-Dive.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="part1">
+                <a href="index.html"><h1>BaliDive</h1></a>
+                <label for="">Gmail: BaliDive23@gmail.com</label>
+                <label for="">No Hp: 999-999-999</label>
+            </div>
+            <div class="part2">
+                <a href="contact.html"><button><b>Contact Us</b></button></a>
+                <div class="sosial-media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="splashScreen" class="splash-screen" style="display: none;">
+        <div class="loader"></div>
+        <h2>Loading...</h2>
+    </div>
+    <script src="template.js"></script>
+</body>
+</html>

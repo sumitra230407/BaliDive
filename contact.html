@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navbar">
+                <div class="Nama-web">
+                    <a href="index.html"><h1>BaliDive</h1></a>
+                </div>
+                <div class="list-nav">
+                    <h1 class="list" data-lang="id"  data-target="home">
+                        Halaman Utama
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="home">
+                        Home
+                    </h1>
+                    <h1 class="list" data-lang="id" data-target="about">
+                        Tentang Free Diving
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="about">
+                        About Free Diving
+                    </h1>
+                    <h1 class="list" data-lang="id" data-target="recomendation">
+                        Rekomendasi Kami
+                    </h1>
+                    <h1 class="list" data-lang="en" data-target="recomendation">
+                        Our Recomendation
+                    </h1>
+                </div>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="rightClick()">
+                            <img src="asset/BenderaInggris.png" alt="">
+                        </button>
+                        <button type="button" class="toggle-btn" onclick="leftClick()">
+                            <img src="asset/BenderaIndonesia.png" alt="">
+                        </button>
+                        <div class="tooltip">Switch Leangue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner" id="home">
+            <div class="bg bg-1"></div>
+            <div class="bg bg-2"></div>
+            <h1>
+                Free Diving
+            </h1>
+            <div class="bg bg-3"></div>
+            <div class="bg bg-4"></div>
+            <div class="bg bg-5"></div>
+            <div class="bg bg-6"></div>
+            <div class="bg bg-7"></div>
+            <div class="bg bg-8"></div>
+            <div class="bg bg-9"></div>
+        </div>
+        
+        <div class="contact">
+            <div class="contact-judul">
+                <h1>Got a question?</h1>
+                <label for="">We'd love to hear from you</label>
+            </div>
+            <div class="input">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="message" placeholder="Message">
+            </div>            
+            <div class="button">
+                <button onclick="submitForm()"><h1>SUBMIT</h1></button>
+            </div>
+            <div id="success-message" style="display:none; color: green; margin-top: 20px;">
+                <h2>Your message has been successfully sent!</h2>
+            </div>
+
+            <div class="footer">
+                <div class="part1">
+                    <a href="index.html"><h1>BaliDive</h1></a>
+                    <label for="">Gmail: BaliDive23@gmail.com</label>
+                    <label for="">No Hp: 999-999-999</label>
+                </div>
+                <div class="part2">
+                    <a href="contact.html"><button><b>Contact Us</b></button></a>
+                    <div class="sosial-media">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="template.js"></script>
+</body>
+</html>

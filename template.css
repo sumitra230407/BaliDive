@@ -12,10 +12,22 @@ body{
     font-family: 'Poppins' , sans-serif;
     font-size: 15px;
     width: 100vw;
-
+    overflow-x: hidden;
 }
 
-/* bagian navbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e67e22; 
+    border-radius: 10px;
+}
+
 .nav {
     position: fixed;
     z-index: 999;
@@ -32,7 +44,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #0a0a11; */
+    background-color: #0a0a11;
     color: white;
     padding: 0 10vw; 
 }
@@ -136,8 +148,6 @@ body{
 	transition: .5s;
 }
 
-
-/* bagian halaman pembuka */
 .banner{
     height: 100vh;
     position: relative;
@@ -182,9 +192,6 @@ body{
     background-image: url('asset-snorkeling/6.png');
     animation: animation-bg6 8s;
 }
-
-/* top: 50px;
-left: -20px; */
 
 @keyframes animation-bg7{
     0% {
@@ -234,7 +241,6 @@ left: -20px; */
     color: #e67e22;
 }
 
-/* style bagian title about us*/
 .judul{
     flex: 1;
     display: flex;
@@ -268,9 +274,6 @@ left: -20px; */
     width: 1.2vw;
     height: 1.2vw;
 }
-/* style bagian title about us*/
-
-
 
 .jenis{
     display: flex;
@@ -328,10 +331,17 @@ left: -20px; */
     padding: 0 5vw;
     gap: 2vw;
 }
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 0.5vw;
+    color: #e67e22;
+}
 .alat{
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 100%;
     height: 12vw;
     background-color: rgba(255, 255, 255, 0.09);
     border-radius: 8px;
@@ -351,9 +361,6 @@ left: -20px; */
     height: 1px;
     background-color: #e67e22;
 }
-
-
-
 
 .gambar-penjelasan{
     flex: 1;
@@ -384,8 +391,6 @@ left: -20px; */
     background-size: cover;
 }
 
-
-/* style map */
 .map{
     position: relative; 
     overflow: hidden;
@@ -437,8 +442,6 @@ left: -20px; */
     background: linear-gradient(to top, #0a0a11, transparent);
     z-index: 1;
 }
-
-/* bagian destinasi */
 
 .destinasi-diving{
     display: flex;
@@ -499,8 +502,6 @@ left: -20px; */
     border-radius: 8px;
 }
 
-
-/* style piliihan */
 .semua-pilihan{
     display: flex;
     gap: 3vw;
@@ -520,7 +521,7 @@ left: -20px; */
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
 
     .banner{
         height: 100vh;
@@ -550,11 +551,11 @@ left: -20px; */
     }
     .judul h1{
         text-align: center;
-        font-size: 6vw;
+        font-size: 8vw;
         margin-top: 0;
     }
     .judul label{
-        font-size: 1.5vw;
+        font-size: 5vw;
     }
     
     .info-tambahan{
@@ -586,7 +587,8 @@ left: -20px; */
         text-align: justify;
         padding: 3vw 5vw 3vw 5vw;
         order: 2;
-        font-size: 3vw;
+        font-size: 5vw;
+        gap: 10vw;
     }
 
     .penjelasan-jenis .primer{
@@ -607,24 +609,20 @@ left: -20px; */
         width: 90%;
     }
 
-    .info-tambahan{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2vw;
-    }
+
     .info{
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 1vw;
     }
     .info label{
-        text-align: start;
-        font-size: 2vw;
+        text-align: center;
+        font-size: 4vw;
     }
     .info img{
-        width: 3.2vw;
-        height: 3.2vw;
+        width: 7.2vw;
+        height: 7.2vw;
     }
 
 
@@ -717,6 +715,107 @@ left: -20px; */
         width: 38vw;
         height: 30vw;
     }
+
+
+    .alat1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 5vw;
+        gap: 2vw;
+    }
+    .alat2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 5vw;
+        gap: 2vw;
+    }
+    .alat{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40vw;
+        background-color: rgba(255, 255, 255, 0.09);
+        border-radius: 8px;
+        border: 2px solid #e67e22;
+        color: white;
+        padding: 2vw;
+        font-size: 4vw;
+        gap: 2vw;
+    }
+    
+    .alat img{
+        width: 8vw;
+    }
+    .icon{
+        gap: 3vw;
+        font-size: 2vw;
+    }
+
+
+    .banner .bg-1{
+        background-image: url('tampilanhp/hp6.png');
+    }
+    .banner .bg-2{
+        background-image: url('tampilanhp/hp7.png');
+    }
+    .banner .bg-3{
+        background-image: url('tampilanhp/hp8.png');
+    }
+    .banner .bg-4{
+        background-image: url('tampilanhp/hp9.png');
+    }
+    .banner .bg-5{
+        background-image: url('tampilanhp/hp10.png');
+    }
+    
+    @keyframes animation-bg6{
+        0% {
+            transform: translate(-30px, 20px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    .banner .bg-6{
+        background-image: url('tampilanhp/hp11.png');
+        animation: animation-bg6 8s;
+    }
+    
+    @keyframes animation-bg7{
+        0% {
+            transform: rotate(-4deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .banner .bg-7{
+        background-image: url('tampilanhp/hp12.png');
+        top: -45px;
+        rotate: -12deg;
+        left: 10px;
+        animation: animation-bg7 8s;
+    }
+    .banner .bg-8{
+        background-image: url('tampilanhp/h13.png');
+        top: 420px;
+    }
+    .banner .bg-9{
+        background-image: url('tampilanhp/hp14.png');
+    }
+    
+    .banner  h1{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12vw;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+    }
 }
 
 
@@ -727,26 +826,26 @@ left: -20px; */
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0); /* Latar belakang hitam semi-transparan */
-    color: white; /* Warna teks putih */
+    background-color: rgba(0, 0, 0); 
+    color: white;
     display: flex;
-    flex-direction: column; /* Agar teks dan loader terletak secara vertikal */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem; /* Ukuran font */
-    z-index: 999; /* Pastikan splash screen di atas elemen lain */
+    font-size: 2rem; 
+    z-index: 999; 
     font-family: 'Pacifico', cursive;
 
 }
 
 .loader {
-    border: 8px solid rgba(255, 255, 255, 0.3); /* Border putih semi-transparan */
-    border-top: 8px solid #ffffff; /* Bagian atas berwarna putih penuh */
-    border-radius: 50%; /* Membuat lingkaran */
-    width: 60px; /* Diameter lingkaran */
-    height: 60px; /* Diameter lingkaran */
-    animation: spin 1s linear infinite; /* Animasi berputar */
-    margin-bottom: 20px; /* Jarak antara loader dan teks */
+    border: 8px solid rgba(255, 255, 255, 0.3); 
+    border-top: 8px solid #ffffff;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+    animation: spin 1s linear infinite; 
+    margin-bottom: 20px;
 }
 
 @keyframes spin {
@@ -763,3 +862,104 @@ left: -20px; */
     transform: translateY(0);
     opacity: 1;
 }
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e67e22;
+    padding: 8vw 25vw;
+    margin: 5vw 10vw;
+    border-radius: 12px;
+    gap: 4vw;
+}
+.contact .input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vw;
+}
+.contact .input input{
+    width: 100%;
+    padding: 1.5vw;
+    border-radius: 50vw;
+    border: none;
+}
+.contact .button{
+    width: 100%;
+}
+.contact .button button{
+    width: 100%;
+    border-radius: 50vw;
+    border: 1px solid #ffffff;
+    padding: 1vw 0;
+    background-color: #e67e22;
+}
+
+#success-message {
+    position: relative;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+#success-message.show {
+    position: relative;
+    opacity: 1;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 8vw;
+    width: 100%;
+    height: 18vw;
+    border-top: 2px  solid #e67e22;
+    color: white;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.part1 h1, a{
+    color: white;
+    text-decoration: none;
+}
+.footer h1{
+    font-family: 'Pacifico', cursive;
+}
+.part1 h1:hover{
+    color: #e67e22;
+}
+.sosial-media .fa-brands{
+    width: 3vw;
+    font-size: 1.5vw;
+    color: white;
+}
+.sosial-media .fa-brands:hover{
+    color: #e67e22;
+}
+.footer .part2{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+.footer button{
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000000;
+}
+.footer button:hover{
+    padding: 1vw 2vw;
+    border-radius: 8px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    background-color: #fff;
+}
+

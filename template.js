@@ -6,8 +6,8 @@ let jenis1 = document.querySelectorAll(".jenis-1");
 let jenis2 = document.querySelectorAll(".jenis-2");
 let peralatan = document.querySelectorAll(".peralatan");
 let map = document.querySelectorAll(".map");
+let lastScrollTop = 0;
 
-// Ambil elemen-elemen yang diperlukan
 const gambarUtama = document.getElementById('gambar-utama');
 const judulElement = document.getElementById('judul');
 const deskripsiElement = document.getElementById('deskripsi');
@@ -30,25 +30,25 @@ document.querySelectorAll('.list').forEach(item => {
     });
 });
 
-// Tambahkan event listener ke setiap pilihan gambar
+const defaultMoreInfoUrl = moreinfo.getAttribute('data-default-url');
+
+moreinfo.onclick = () => {
+    window.location.href = defaultMoreInfoUrl;
+};
+
 pilihanGambar.forEach(pilihan => {
     pilihan.addEventListener('click', () => {
-        // Ambil data dari atribut data-info
         const info = JSON.parse(pilihan.getAttribute('data-info'));
 
-        // Ganti gambar utama, judul, deskripsi, dan lokasi
         gambarUtama.src = info.src;
         judulElement.textContent = info.judul;
         informasi.textContent = info.informasi;
-        deskripsiElement.innerHTML = `<a href="${info.href}"><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> ${info.lokasi}</a>`;
-        
-        // Pastikan tombol "More Information" tetap sama
-        const buttonContainer = document.getElementById('more-info-button');
-        buttonContainer.innerHTML = "<b>More Information</b>";  // Ini untuk memastikan teks tetap
+        deskripsiElement.innerHTML = `<a href="${info.href}">
+            <i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> ${info.lokasi}</a>`;
 
         moreinfo.onclick = () => {
-            window.location.href = info.moreinfo
-        }
+            window.location.href = info.moreinfo;
+        };
     });
 });
 
@@ -104,7 +104,6 @@ function showSplashScreen() {
 var btn = document.getElementById('btn');
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Set default language to English on page load
     const langElements = document.querySelectorAll('[data-lang]');
     langElements.forEach(el => {
         if (el.getAttribute('data-lang') === 'en') {
@@ -118,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function leftClick() {
-    // Show Indonesian language elements
     btn.style.left = "45px";
     showSplashScreen(); 
     document.querySelectorAll('[data-lang="id"]').forEach(el => el.style.display = 'block');
@@ -126,9 +124,34 @@ function leftClick() {
 }
 
 function rightClick() {
-    // Show English language elements
     btn.style.left = "0px";
     showSplashScreen(); 
     document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.display = 'block');
     document.querySelectorAll('[data-lang="id"]').forEach(el => el.style.display = 'none');
+}
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('hidden');
+    } else {
+        navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+
+function submitForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+
+    const successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block";
+
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 3000);
 }
