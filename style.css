@@ -1119,13 +1119,6 @@ body{
         order: 1;
         justify-content: center;
     }
-    .gambar img{
-        width: 100%;
-        height: 55vw;
-        border-radius: 8px;
-        padding: 0 10vw;
-    }
-
 
     .gambar-penjelasan{
         flex: 1;
@@ -1174,6 +1167,23 @@ body{
         display: flex;
         width: 100%;
     }
+
+    .news {
+        height: 80vw !important;
+    }
+    .news img {
+        width: 50vw !important;
+        height: 30vw !important;
+    }
+    .news h1{
+        font-size: 4vw;
+    }
+    .news label{
+        font-size: 3vw;
+    }
+    .news a{
+        font-size: 3vw;
+    }
 }
 
 
@@ -1189,7 +1199,7 @@ body{
 }
 
 .news {
-    height: 30vw;
+    height: 32vw;
     background-color: #fff;
     border-radius: 12px;
     position: relative;
