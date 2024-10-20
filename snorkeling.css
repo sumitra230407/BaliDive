@@ -487,86 +487,6 @@ body{
 }
 
 
-@media (max-width: 720px) {
-
-    .banner{
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .keterangan1 h1{
-        font-size: 3vh;
-    }
-    .keterangan2 label{
-        font-size: 1.5vh;
-    }
-
-    .banner .bg-1{
-        background-image: url('tampilanhp/hp6.png');
-    }
-    .banner .bg-2{
-        background-image: url('tampilanhp/hp7.png');
-    }
-    .banner .bg-3{
-        background-image: url('tampilanhp/hp8.png');
-    }
-    .banner .bg-4{
-        background-image: url('tampilanhp/hp9.png');
-    }
-    .banner .bg-5{
-        background-image: url('tampilanhp/hp10.png');
-    }
-    
-    @keyframes animation-bg6{
-        0% {
-            transform: translate(-30px, 20px);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
-    }
-    .banner .bg-6{
-        background-image: url('tampilanhp/hp11.png');
-        animation: animation-bg6 8s;
-    }
-    
-    @keyframes animation-bg7{
-        0% {
-            transform: rotate(-4deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    .banner .bg-7{
-        background-image: url('tampilanhp/hp12.png');
-        top: -45px;
-        rotate: -12deg;
-        left: 10px;
-        animation: animation-bg7 8s;
-    }
-    .banner .bg-8{
-        background-image: url('tampilanhp/h13.png');
-        top: 420px;
-    }
-    .banner .bg-9{
-        background-image: url('tampilanhp/hp14.png');
-    }
-    
-    .banner  h1{
-        position: absolute;
-        top: 40%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 12vw;
-        font-family: 'Pacifico', cursive;
-        color: #fff;
-    }
-}
-
-
 .splash-screen {
     position: fixed;
     top: 0;
@@ -663,4 +583,94 @@ body{
     color: #e67e22;
     border: 2px solid #e67e22;
     background-color: #fff;
+}
+
+
+
+@media (max-width: 720px) {
+
+    .banner{
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .keterangan1 h1{
+        font-size: 3vh;
+    }
+    .keterangan2 label{
+        font-size: 1.5vh;
+    }
+
+    .banner .bg-1{
+        background-image: url('tampilanhp/hp6.png');
+    }
+    .banner .bg-2{
+        background-image: url('tampilanhp/hp7.png');
+    }
+    .banner .bg-3{
+        background-image: url('tampilanhp/hp8.png');
+    }
+    .banner .bg-4{
+        background-image: url('tampilanhp/hp9.png');
+    }
+    .banner .bg-5{
+        background-image: url('tampilanhp/hp10.png');
+    }
+    
+    @keyframes animation-bg6{
+        0% {
+            transform: translate(-30px, 20px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    .banner .bg-6{
+        background-image: url('tampilanhp/hp11.png');
+        animation: animation-bg6 8s;
+    }
+    
+    @keyframes animation-bg7{
+        0% {
+            transform: rotate(-4deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    .banner .bg-7{
+        background-image: url('tampilanhp/hp12.png');
+        top: -45px;
+        rotate: -12deg;
+        left: 10px;
+        animation: animation-bg7 8s;
+    }
+    .banner .bg-8{
+        background-image: url('tampilanhp/h13.png');
+        top: 420px;
+    }
+    .banner .bg-9{
+        background-image: url('tampilanhp/hp14.png');
+    }
+    
+    .banner  h1{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 12vw;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+    }
+
+    
+    .footer{
+        height: 30vw !important;
+    }
+    .sosial-media .fa-brands{
+        width: 7.5vw !important;
+        font-size: 3vw !important;
+    }
 }
