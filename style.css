@@ -1268,6 +1268,20 @@ body{
         background-size: cover;
     }
 
+    .isi{
+        align-items: center;
+        text-align: center;
+        padding: 0 10vw;
+    }
+    .isi h1{
+        font-size: 5vw;
+    }
+
+    .isi label{
+        font-size: 4vw;
+    }
+
+
 
     .semua-pilihan{
         gap: 6vw;
@@ -1284,6 +1298,7 @@ body{
     .map-khursus{
         display: flex;
         width: 100%;
+        padding: 10vw 12vw;
     }
 
     .news {
